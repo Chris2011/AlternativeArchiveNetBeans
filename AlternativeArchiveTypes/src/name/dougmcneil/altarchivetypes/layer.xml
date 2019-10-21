@@ -58,25 +58,25 @@
                         <attr name="position" intvalue="1100"/>
                     </file>
                 </folder>
-                <folder name="Factories">
-                    <!--<file name="AltArchiveDataLoader.instance">
+<!--                <folder name="Factories">
+                    <file name="AltArchiveDataLoader.instance">
                         <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/name/dougmcneil/altarchivetypes/tar_16.png"/>
                         <attr name="dataObjectClass" stringvalue="name.dougmcneil.altarchivetypes.AltArchiveDataObject"/>
                         <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
                         <attr name="mimeType" stringvalue="application/x-tar"/>
-                    </file>-->
+                    </file>
                     <file name="name-dougmcneil-altarchivetypes-AltArchiveDataLoader.instance">
                         <attr name="SystemFileSystem.localizingBundle" stringvalue="name.dougmcneil.altarchivetypes.Bundle"/>
                     </file>
-                </folder>
+                </folder>-->
             </folder>
         </folder>
     </folder>
-    <folder name="Services">
+<!--    <folder name="Services">
         <folder name="MIMEResolver">
             <file name="AltArchiveResolver.xml" url="AltArchiveResolver.xml">
                 <attr name="displayName" bundlevalue="name.dougmcneil.altarchivetypes.Bundle#Services/MIMEResolver/AltArchiveResolver.xml"/>
             </file>
         </folder>
-    </folder>
+    </folder>-->
 </filesystem>

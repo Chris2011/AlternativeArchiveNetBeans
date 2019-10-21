@@ -12,9 +12,9 @@ import org.openide.loaders.MultiFileLoader;
 import org.openide.nodes.Node;
 import org.openide.util.Lookup;
 
-public class AltArchiveDataObject extends MultiDataObject {
+public class AltArchiveDataObjectOld extends MultiDataObject {
 
-    public AltArchiveDataObject(FileObject pf, MultiFileLoader loader) throws
+    public AltArchiveDataObjectOld(FileObject pf, MultiFileLoader loader) throws
             DataObjectExistsException, IOException {
         super(pf, loader);
 
@@ -22,7 +22,8 @@ public class AltArchiveDataObject extends MultiDataObject {
 
     @Override
     protected Node createNodeDelegate() {
-        return new AltArchiveNode(this);
+//        return new AltArchiveNode(this);
+return null;
     }
 
     @Override

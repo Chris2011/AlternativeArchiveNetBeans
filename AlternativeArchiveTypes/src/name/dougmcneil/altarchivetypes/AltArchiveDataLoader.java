@@ -33,7 +33,7 @@ public class AltArchiveDataLoader extends UniFileLoader {
     }
 
     protected void initialize() {
-        super.initialize();
+//        super.initialize();
         ExtensionList extensions = new ExtensionList();
         extensions.addMimeType(ALTARCHIVE_MIME_TYPE);
         setExtensions(extensions);
@@ -45,6 +45,6 @@ public class AltArchiveDataLoader extends UniFileLoader {
     }
 
     protected MultiDataObject createMultiObject(FileObject primaryFile) throws DataObjectExistsException, IOException {
-        return new AltArchiveDataObject(primaryFile, this);
+        return new AltArchiveDataObjectOld(primaryFile, this);
     }
 }

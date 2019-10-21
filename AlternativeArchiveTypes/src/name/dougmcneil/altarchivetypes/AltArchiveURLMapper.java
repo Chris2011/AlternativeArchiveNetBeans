@@ -82,7 +82,7 @@ public class AltArchiveURLMapper extends URLMapper {
             if (index>=0) {
                 try {
                     URL archiveFileURL;
-                    URI archiveFileURI = new URI(path.substring(0,index));
+                    URI archiveFileURI = new URI(path.substring(0,index)); // TODO: Exception
                     try {
                         if (archiveFileURI.getScheme().equals(ALTARCHIVE_PROTOCOL)) {
                             archiveFileURL = new URL(ALTARCHIVE_PROTOCOL, null, -1, path.substring(4,index), new AARURLStreamHandler());

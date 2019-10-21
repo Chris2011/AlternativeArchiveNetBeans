@@ -21,11 +21,11 @@ import org.openide.util.RequestProcessor;
 final class AltArchiveNode extends DataNode {
     private static final RequestProcessor RP = new RequestProcessor(AltArchiveNode.class.getName(), 1, false, false);
 
-    public AltArchiveNode(AltArchiveDataObject obj) {
+    public AltArchiveNode(AltArchivesDataObject obj) {
         this(obj, new DummyChildren());
     }
 
-    private AltArchiveNode(AltArchiveDataObject obj, DummyChildren c) {
+    private AltArchiveNode(AltArchivesDataObject obj, DummyChildren c) {
         super(obj, c);
         c.attachAltArchiveNode(this);
         setIconBaseWithExtension("name/dougmcneil/altarchivetypes/tar_16.png"); // NOI18N
